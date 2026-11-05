@@ -78,9 +78,7 @@ Registers a new user in the system. The password will be hashed with BCrypt befo
 #### Request:
 
 ```bash
-curl -X POST http://localhost:8080/register \
-     -H "Content-Type: application/x-www-form-urlencoded" \
-     -d "email=test@example.com&password=mypassword"
+curl -X POST http://localhost:8080/register -H "Content-Type: application/x-www-form-urlencoded" -d "email=test@example.com&password=mypassword"
 ```
 
 #### Responses:
@@ -108,9 +106,7 @@ Authenticates existing user credentials against the stored hash.
 #### Request:
 
 ```bash
-curl -X POST http://localhost:8080/login \
-     -H "Content-Type: application/x-www-form-urlencoded" \
-     -d "email=test@example.com&password=mypassword"
+curl -X POST http://localhost:8080/login -H "Content-Type: application/x-www-form-urlencoded" -d "email=test@example.com&password=mypassword"
 ```
 
 #### Responses:
